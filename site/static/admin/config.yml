@@ -80,3 +80,9 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Heading, name: heading, widget: string}
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
+  - name: "footer" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Footer" # Used in the UI, ie.: "New Post"
+    folder: "site/content/footer" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
