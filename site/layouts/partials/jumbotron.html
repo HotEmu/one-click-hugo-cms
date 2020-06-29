@@ -29,7 +29,7 @@
         <article class="flex-ns db-m flex-l pt1 justify-between">
           <div class="w-100 w-100-m w-50-l pr0 pr2-ns">
             <section>
-              <article class="card hidden ba mb3">
+              <article class="card hidden ba mb3 clickable-card">
                 <div class="ph3 pv2">
                   <section>
                     <article>
@@ -61,7 +61,7 @@
           </div>
           <div class="w-100 w-100-m w-50-l pl0 pl2-ns">
             <section>
-              <article class="card hidden ba mb3">
+              <article class="card hidden ba mb3 clickable-card">
                 <div class="ph3 pv2">
                   <section>
                     <article>
@@ -97,7 +97,7 @@
         <article class="flex-ns db-m flex-l pt1 justify-between">
           <div class="w-100 w-100-m w-33-l pr0 pr2-ns">
             <section>
-              <article class="card hidden ba mb3">
+              <article class="card hidden ba mb3 clickable-card">
                 <div class="pa3">
                   <div class="mb2">
                     <i class="far fa-circle mr2 card-heading-icon"></i><h2 class="primary card-heading">Limited</h2>
@@ -111,7 +111,7 @@
           </div>
           <div class="w-100 w-100-m w-33-l ph0 ph2-ns">
             <section>
-              <article class="card hidden ba mb3">
+              <article class="card hidden ba mb3 clickable-card">
                 <div class="pa3">
                   <div class="mb2">
                     <i class="fas fa-project-diagram mr2 card-heading-icon"></i><h2 class="primary card-heading">Standard</h2>
@@ -125,7 +125,7 @@
           </div>
           <div class="w-100 w-100-m w-33-l pl0 pl2-ns">
             <section>
-              <article class="card hidden ba mb3">
+              <article class="card hidden ba mb3 clickable-card">
                 <div class="pa3">
                   <div class="mb2">
                     <i class="fab fa-react mr2 card-heading-icon"></i><h2 class="primary card-heading">Advanced</h2>
@@ -158,6 +158,15 @@
     line-height: 24px;
     width: 100%;
     max-width: 100%;
+  }
+
+  .clickable-card {
+    cursor: pointer;
+    transition: box-shadow 0.25s;
+  }
+
+  .clickable-card:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   }
 
   .card {
