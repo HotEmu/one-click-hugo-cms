@@ -1,18 +1,248 @@
-<div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('{{.imageUrl}}')">
-  <div class="mw7 center ph3">
-    <div class="db mb3">
-      <div class="mw7 relative bg-fix-primary mb3">
-        <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-          {{.title}}
-        </h1>
+<div class="pv4">
+  <div class="flex ph3">
+    <div id="side-nav" class="w-20-l w-30-m ph3 dn db-ns forced-hidden">
+      <div class="search-input-wrapper mb3">
+        <input class="search-input" type="text" placeholder=""/>
+        <div class="search-input-icon-wrapper">
+          <i class="fa fa-search"></i>
+        </div>
       </div>
-      <div class="mw7 relative bg-fix-primary">
-        {{ if .subtitle }}
-        <p class="b f4 di lh-title mb3 white mw6 bg-primary">
-          {{.subtitle}}
-        </p>
-        {{ end }}
-      </div>
+      <h3 class="f4 b lh-title mb1 primary border-left-white pb1 heading">Overview</h3>
+      <ul class="mb1 border-left-white">
+        <li><a href="/" class="link">Buttons Guide</a></li>
+        <li><a href="/products" class="link">User Experience Guide</a></li>
+        <li><a href="/values" class="link">Design Recommendations</a></li>
+        <li><a href="/post" class="link">Limited Implementation</a></li>
+        <li><a href="/contact" class="link">Standard Implementation</a></li>
+        <li><a href="/contact" class="link">Advanced Implementation</a></li>
+        <li><a href="/contact" class="link">Error Handling</a></li>
+      </ul>
+    </div>
+    <div id="body-content" class="w-80-l w-70-m pl5-l pr3-ns">
+      <section>
+        <article>
+          <h2 class="primary heading mb3">Overview</h2>
+          <p>
+            How does your system support federated authentication? In all cases, your service needs to be enabled with federated authentication. If a user can already sign into your site using their institution’s sign in credentials you may be able to simply configure your service to use SeamlessAccess.
+          </p>
+        </article>
+        <article class="flex-ns db-m flex-l pt1 justify-between">
+          <div class="w-100 w-100-m w-50-l pr0 pr2-ns">
+            <section>
+              <article class="card hidden ba mb3">
+                <div class="ph3 pv2">
+                  <section>
+                    <article>
+                      <div class="mb2">
+                        <h2 class="primary card-heading">Buttons</h2>
+                      </div>
+                    </article>
+                  </section>
+                  <section>
+                    <article class="flex-ns pb1">
+                      <div class="w-100 w-100-m w-50-l pr0 pr1-ns">
+                        <img alt="Dark Button Image" src="/img/dark_button.png"/>
+                      </div>
+                      <div class="w-100 w-100-m w-50-l pl0 pl1-ns">
+                        <img alt="Light Button Image" src="/img/light_button.png"/>
+                      </div>
+                    </article>
+                  </section>
+                  <section>
+                    <article>
+                      <p class="f6 f5-ns lh-copy measure mv0">
+                        Styles, use cases, and the code you need to get started using the service.
+                      </p>
+                    </article>
+                  </section>
+                </div>
+              </article>
+            </section>
+          </div>
+          <div class="w-100 w-100-m w-50-l pl0 pl2-ns">
+            <section>
+              <article class="card hidden ba mb3">
+                <div class="ph3 pv2">
+                  <section>
+                    <article>
+                      <div class="mb2">
+                        <h2 class="primary card-heading">User Experience</h2>
+                      </div>
+                    </article>
+                  </section>
+                  <section>
+                    <article class="flex-ns pb1">
+                      <div class="w-100">
+                        <img alt="Placeholder Image" src="https://via.placeholder.com/446x37"/>
+                      </div>
+                    </article>
+                  </section>
+                  <section>
+                    <article>
+                      <p class="f6 f5-ns lh-copy measure mv0">
+                        Styles, use cases, and the code you need to get started using the service.
+                      </p>
+                    </article>
+                  </section>
+                </div>
+              </article>
+            </section>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2 class="primary heading mb3">Three Flavors of Implementation</h2>
+        </article>
+        <article class="flex-ns db-m flex-l pt1 justify-between">
+          <div class="w-100 w-100-m w-33-l pr0 pr2-ns">
+            <section>
+              <article class="card hidden ba mb3">
+                <div class="pa3">
+                  <div class="mb2">
+                    <i class="far fa-circle mr2 card-heading-icon"></i><h2 class="primary card-heading">Limited</h2>
+                  </div>
+                  <p class="f6 f5-ns lh-copy measure mv0">
+                    Use the service without full integration
+                  </p>
+                </div>
+              </article>
+            </section>
+          </div>
+          <div class="w-100 w-100-m w-33-l ph0 ph2-ns">
+            <section>
+              <article class="card hidden ba mb3">
+                <div class="pa3">
+                  <div class="mb2">
+                    <i class="fas fa-project-diagram mr2 card-heading-icon"></i><h2 class="primary card-heading">Standard</h2>
+                  </div>
+                  <p class="f6 f5-ns lh-copy measure mv0">
+                    Integrate the service and the button
+                  </p>
+                </div>
+              </article>
+            </section>
+          </div>
+          <div class="w-100 w-100-m w-33-l pl0 pl2-ns">
+            <section>
+              <article class="card hidden ba mb3">
+                <div class="pa3">
+                  <div class="mb2">
+                    <i class="fab fa-react mr2 card-heading-icon"></i><h2 class="primary card-heading">Advanced</h2>
+                  </div>
+                  <p class="f6 f5-ns lh-copy measure mv0">
+                    Control all levels of your integration
+                  </p>
+                </div>
+              </article>
+            </section>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h2 class="primary heading mb3">More Things You Need to Know</h2>
+          <p>
+            How does your system support federated authentication? In all cases, your service needs to be enabled with federated authentication. If a user can already sign into your site using their institution’s sign in credentials you may be able to simply configure your service to use SeamlessAccess.
+          </p>
+        </article>
+      </section>
+
     </div>
   </div>
 </div>
+
+<style>
+  #body-content p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card {
+    border: 1px solid #216E93;
+    border-radius: 8px;
+  }
+
+  .card .card-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #216E93;
+    line-height: 35px;
+  }
+
+  .card-heading-icon {
+    font-size: 35px;
+    color: #216E93;
+    float: left;
+  }
+
+  .search-input-wrapper {
+    position: relative;
+  }
+
+  .search-input-wrapper .search-input-icon-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: white;
+    padding: 8px 12px;
+    margin-top: 1px;
+    margin-right: 1px;
+    color: #216E93;
+    z-index: 9;
+    border-radius: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid #216E93;
+    background: transparent;
+  }
+
+  .search-input:focus {
+    box-shadow: 0px 0px 6px #1890E6;
+  }
+
+  h3.heading, h2.heading {
+    font-weight: 700;
+    font-size: 18px;
+    color: #216E93;
+  }
+
+  h2.heading {
+    font-size: 22px
+  }
+
+  .link:link, .link:visited {
+    font-size: 18px;
+  }
+
+  .forced-hidden {
+    display: block !important;
+  }
+
+  @media screen and (max-width: 40em) {
+    #side-nav .forced-hidden {
+      width: 0 !important;
+    }
+
+    #side-nav {
+      background: white;
+      height: 100%;
+      position: absolute;
+      padding-top: 20px;
+      top: 93px;
+      right: 0;
+      border-left: 1px solid #2e2e2e;
+      width: 250px !important;
+      -webkit-transition: width 0.5s ease-in-out;
+      -moz-transition: width 0.5s ease-in-out;
+      -o-transition: width 0.5s ease-in-out;
+      transition: width 0.5s ease-in-out;
+    }
+  }
+
+</style>

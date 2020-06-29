@@ -1,19 +1,64 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
-
+<nav class="nav overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white relative">
 	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/>
+	<a href="/" class="nav-logo pa3 db mr4 h-100 flex-none">
+		<img src="/img/SeamlessNavLogo.svg" alt="SeamlessAccess Logo" class="br0 db mb0 w-100"/> <span>DOCS</span>
 	</a>
 
 	<!-- Primary Nav -->
 	<ul class="flex b grey-3">
-		<li><a href="/products" class="pa3 no-underline db">Products</a></li>
-
-		<li><a href="/values" class="pa3 no-underline db">Values</a></li>
-
-		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
+		<li><a href="/contact" class="pa3 no-underline db nav-link">Contact</a></li>
+		<li><a href="#" id="menu-trigger" class="pa3 no-underline db dn-ns nav-link">Menu</a></li>
 	</ul>
 
 </nav>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var menuTrigger = document.getElementById('menu-trigger');
+		var menu = document.getElementById('side-nav');
+
+		menuTrigger.addEventListener('click', function() {
+			if (menu.classList.contains('forced-hidden')) {
+				menu.classList.remove('forced-hidden');
+			} else {
+				menu.classList.add('forced-hidden');
+			}
+		}, false);
+	})
+</script>
+
+<style>
+	.nav {
+		border-bottom: 1px solid #6E6E6E;
+	}
+
+	.nav-logo img {
+		width: 140px;
+	}
+
+	.nav-link {
+		color: #216E93;
+		font-weight: 500;
+		font-size: 14px;
+	}
+
+	.nav-link:hover, .nav-link:active, .divider-grey ul a:hover, .divider-grey ul a:focus {
+		border: none;
+		text-decoration: none;
+		box-shadow: none
+	}
+
+	.nav-logo span {
+		line-height: 49px;
+		margin-left: 8px;
+		font-size: 40px;
+		font-weight: 100;
+		margin-top: 7px;
+	}
+
+	.nav-logo img, .nav-logo span {
+		float: left;
+		text-decoration: none;
+		color: #216E93;
+	}
+</style>
