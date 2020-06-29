@@ -1,13 +1,18 @@
 <nav class="nav overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white relative">
 	<!-- Logo -->
-	<a href="/" class="nav-logo pa3 db mr4 h-100 flex-none">
+	<a href="/" class="nav-logo pa3 db mr1 h-100 flex-none">
 		<img src="/img/SeamlessNavLogo.svg" alt="SeamlessAccess Logo" class="br0 db mb0 w-100"/> <span>DOCS</span>
 	</a>
 
 	<!-- Primary Nav -->
 	<ul class="flex b grey-3">
 		<li><a href="/contact" class="pa3 no-underline db nav-link">Contact</a></li>
-		<li><a href="#" id="menu-trigger" class="pa3 no-underline db dn-ns nav-link">Menu</a></li>
+		<li>
+			<a href="#" id="menu-trigger" class="pa3 no-underline db dn-ns nav-link">
+				<i id="menu-icon" class="fas fa-chevron-down menu-icon mr1"></i>
+				Menu
+			</a>
+		</li>
 	</ul>
 
 </nav>
@@ -16,12 +21,19 @@
 	document.addEventListener("DOMContentLoaded", function() {
 		var menuTrigger = document.getElementById('menu-trigger');
 		var menu = document.getElementById('side-nav');
+		var menuIcon = document.getElementById('menu-icon');
 
 		menuTrigger.addEventListener('click', function() {
 			if (menu.classList.contains('forced-hidden')) {
 				menu.classList.remove('forced-hidden');
+				menuIcon.classList.add('fa-chevron-down');
+				menuIcon.classList.remove('fa-times');
 			} else {
 				menu.classList.add('forced-hidden');
+				menuIcon.classList.add('fa-chevron-down');
+				menuIcon.classList.remove('fa-times');
+				menuIcon.classList.remove('fa-chevron-down');
+				menuIcon.classList.add('fa-times');
 			}
 		}, false);
 	})
@@ -60,5 +72,10 @@
 		float: left;
 		text-decoration: none;
 		color: #216E93;
+	}
+
+	.menu-icon {
+		float: left;
+		margin-top: 4px
 	}
 </style>

@@ -1,33 +1,76 @@
 <!-- Contact -->
 <div class="mb4">
-  <h4 class="f3 b lh-title mb3 tc">Drop us a line below</h4>
+  <section>
+    <article>
+      <h2 class="primary heading mv3">Contact Us</h2>
+    </article>
+  </section>
+  <section>
+    <article>
+      <form id="contact-form" class="pa4" action="">
+        <div class="flex-l mhn1-l">
+          <!-- Name -->
+          <div class="pr1-l w-50-l">
+            <fieldset>
+              <input type="text" id="name" name="name" placeholder="Name" class="custom-input w-100 mb2">
+            </fieldset>
+          </div>
+          <!-- Email -->
+          <div class="pl1-l w-50-l">
+            <fieldset>
+              <input type="email" id="email" name="email" placeholder="Email" class="custom-input w-100 mb2">
+            </fieldset>
+          </div>
+        </div>
 
-  <form action="">
-    <div class="flex-l mhn1-l">
-      <!-- Name -->
-      <div class="ph1-l w-50-l">
+        <!-- Message -->
         <fieldset>
-          <input type="text" id="name" name="name" placeholder="Name" class="w-100 mb2">
-          <label for="name">Name</label>
+          <textarea id="message" name="message" placeholder="Your message" rows="8" cols="80" class="custom-textarea w-100"></textarea>
         </fieldset>
-      </div>
-      <!-- Email -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="email" id="email" name="email" placeholder="Email" class="w-100 mb2">
-          <label for="email">Email</label>
-        </fieldset>
-      </div>
-    </div>
-
-    <!-- Message -->
-    <fieldset>
-      <textarea id="message" name="message" placeholder="Your message" rows="8" cols="80" class="w-100"></textarea>
-      <label for="message">Your message</label>
-    </fieldset>
-    <!-- Button -->
-    <div class="tc">
-      <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
-    </div>
-  </form>
+        <!-- Button -->
+        <section>
+          <article class="flex-ns">
+            <div class="w-100 w-50-l w-50-m">
+              <fieldset class="bn mt3">
+                <div class="flex items-center">
+                  <input class="mr2 custom-check-box" type="checkbox" id="send-updates-checkbox">
+                  <label for="send-updates-checkbox" class="check-box-l-line-height lh-copy">Sign me up to receive communications</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="w-100 w-50-l w-50-m">
+              <div class="tr mt3">
+                <button type="submit" class="primary-btn tile btn w-100 w4-ns">Send</button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </form>
+    </article>
+  </section>
 </div>
+
+<style>
+  #contact-form {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid #216E93;
+    border-radius: 5px;
+  }
+
+  .primary-btn.tile {
+    background: #216E93;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .primary-btn.tile:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .check-box-l-line-height {
+    line-height: 39px;
+  }
+</style>
